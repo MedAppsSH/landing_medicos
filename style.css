@@ -1,0 +1,410 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-yellow: #ede53c;
+    --secondary-yellow: #fefaa4;
+    --main-blue: #0e7988;
+}
+
+.even h1 {
+    font-family: roboto;
+    color: white;
+    font-size: 2.25rem;
+}
+
+.even h2 {
+    font-family: roboto;
+    color: white;
+    font-size: 2.75vh;
+    font-weight: 300;
+}
+
+@media (orientation: landscape) {
+    .even h2 {
+        line-height: 1.75;
+    }
+}
+
+.odd h1 {
+    font-family: roboto;
+    color: var(--main-blue);
+    font-size: 2.25rem;
+}
+
+.odd h2 {
+    font-family: roboto;
+    color: var(--main-blue);
+    font-size: 3vh;
+    font-weight: 300;
+}
+
+.odd h3 {
+    font-family: roboto;
+    color: var(--main-blue);
+    font-size: 2.5vh;
+    font-weight: 200;
+}
+
+.odd h4 {
+    font-family: roboto;
+    font-size: 2.25vh;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.section1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('./src/hero_provisional.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+}
+
+.hero {
+    width: 85%;
+    max-width: 1080px;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+}
+
+.side_l {
+    width: 50%;
+}
+
+.registrarse {
+    background: linear-gradient(to bottom, var(--secondary-yellow) 0%, var(--main-yellow) 100%);
+    border: none;
+    width: 50%;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--main-blue);
+    font-family: roboto;
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.medpal_logo_h {
+    display: none;
+    width: 75%;
+    max-width: 400px;
+    height: 200px;
+    background-image: url(./src/logo_h.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (orientation: landscape) {
+    .medpal_logo_h {
+        display: block;
+    }
+}
+
+.medpal_logo_v {
+    width: 50%;
+    max-width: 200px;
+    height: 175px;
+    background-image: url(./src/logo_v.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (orientation: landscape) {
+    .medpal_logo_v {
+        display: none;
+    }
+}
+
+.hero h1 {
+    font-size: 2.5vh;
+}
+
+.section2 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.features1 {
+    width: 85%;
+    max-width: 1080px;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    grid-template-columns: 100%;
+}
+
+#img_feature1 {
+    width: 85vw;
+    height: 40vh;
+    background-image: url(./src/características_1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+@media (orientation: landscape) {
+    .features1 {
+        grid-template-columns: 60% 40%;
+        text-align: left;
+        grid-gap: 0 12%;
+    }
+
+    .features1 h2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .features1 h1 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #img_feature1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        height: 60vh;
+    }
+}
+
+.section3 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./src/características_2.png');
+    background-position: 52% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.features2 {
+    width: 85%;
+    max-width: 1080px;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+}
+
+.section4 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.features3 {
+    width: 85%;
+    max-width: 1080px;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    grid-template-columns: 100%;
+    grid-gap: 50px 0;
+}
+
+#img_feature3 {
+    width: 100vw;
+    height: 45vh;
+    background-image: url(./src/características_3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.highlight {
+    width: 75%;
+    max-width: 768px;
+    border-radius: 50px;
+    padding: 30px;
+    box-shadow: 10px 10px 10px #ccc;
+}
+
+@media (orientation: landscape) {
+    .features3 {
+        grid-template-columns: 60% 40%;
+        text-align: left;
+        grid-gap: 5%;
+    }
+
+    .features3 .highlight {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .features3 .registrarse {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #img_feature3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        height: 85vh;
+    }
+}
+
+.section5 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.reviews {
+    width: 85%;
+    max-width: 1080px;
+    /* height: 60vh; */
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    grid-template-columns: 100%;
+    margin-bottom: 10%;
+}
+
+@media (orientation: landscape) {
+    .reviews h1 {
+        font-size: 4rem;
+    }
+}
+
+#img_customer {
+    width: 50vw;
+    max-width: 200px;
+    height: 50vw;
+    max-height: 200px;
+    background-image: url(./src/customer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+}
+
+.form {
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    grid-template-columns: 100%;
+    background-color: #e9f7fa;
+}
+
+.form h1 {
+    font-size: 2rem;
+}
+
+form {
+    border-radius: 10px; 
+    padding: 20px;
+    display: inline-block;
+}
+
+label {
+    width: 100%;
+    display: inline-block;
+    color: #9d9fa0;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: roboto;
+    font-size: 1rem;
+    font-weight: 200;
+    padding-top: 10%;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 25vw;
+    min-width: 100%;
+    height: 3%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #a5d8e4;
+    background-color: #f8f8f8;
+    padding: 30px 0;
+}
+
+input[type=checkbox] {
+    display: block;
+}
+
+input[type=submit] {
+    background-color: #63a9b8;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check input, .check label {
+    padding: 0;
+    margin: 0;
+}
+
+.check label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+@media (orientation: landscape) {
+    .form h1 {
+        font-size: 4rem;
+    }
+    label {
+        font-size: 1.75rem;
+        font-weight: 400;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=password] {
+    height: 7%;
+    }
+    .check label {
+        font-size: 1rem;
+    }
+}
